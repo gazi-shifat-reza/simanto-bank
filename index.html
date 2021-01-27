@@ -51,7 +51,7 @@
                     <input id="depositAmount" class="form-control" type="text"
                         placeholder="$ amount you want to deposit">
                     <br>
-                    <button id="addDeposit" class="btn btn-success">Deposite</button>
+                    <button id="addDeposit" class="btn btn-success">Deposit</button>
                 </div>
             </div>
             <div class="col-md-6">
@@ -115,10 +115,10 @@
             return amountNumber;
         }
 
-        function updateSpanText(id, depositNumber) {
+        function updateSpanText(id, addedNumber) {
             const current = document.getElementById(id).innerText;
             const currentNumber = parseFloat(current);
-            const totalAmount = depositNumber + currentNumber;
+            const totalAmount = addedNumber + currentNumber;
             document.getElementById(id).innerText = totalAmount;
         }
 
